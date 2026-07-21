@@ -4,271 +4,303 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tempo Traveller Booking in Kanpur | Prime4Travels</title>
-  <meta name="description" content="Book comfortable Tempo Traveller in Kanpur for family tour, group trip, wedding, outstation and religious travel. Affordable rates with experienced drivers." />
+  <meta name="description" content="Book comfortable Tempo Traveller in Kanpur for family tour, group trip, wedding, outstation and religious travel. AC coach, all-India permit, experienced drivers and affordable rates." />
   <meta name="keywords" content="Tempo Traveller in Kanpur, Traveller Booking in Kanpur, Family Tour Traveller Kanpur, Group Tour Traveller Kanpur, Outstation Traveller Booking, 17 Seater Tempo Traveller Kanpur" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="site-header py-3 bg-dark text-white">
-    <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between gap-3">
-      <div class="d-flex align-items-center gap-3">
-        <div class="brand-logo">P4T</div>
-        <div>
-          <h1 class="h5 mb-0">Prime4Travels</h1>
-          <p class="mb-0 text-muted small">Tempo Traveller Booking in Kanpur</p>
-        </div>
-      </div>
-      <nav class="nav gap-3">
-        <a class="nav-link text-white" href="#services">Services</a>
-        <a class="nav-link text-white" href="#gallery">Gallery</a>
-        <a class="nav-link text-white" href="#routes">Routes</a>
-        <a class="nav-link text-white" href="#contact">Contact</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="brand" aria-label="Prime4Travels home">
+        <span class="brand-mark">P4T</span>
+        <span class="brand-text">
+          <strong>Prime4Travels</strong>
+          <small>Tempo Traveller · Kanpur</small>
+        </span>
+      </a>
+      <nav class="main-nav" aria-label="Primary">
+        <a href="#services">Services</a>
+        <a href="#fleet">Fleet</a>
+        <a href="#routes">Routes</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
       </nav>
+      <a href="tel:+919956531108" class="btn btn-brand btn-sm header-cta">
+        <i class="bi bi-telephone-fill"></i> 99565 31108
+      </a>
     </div>
   </header>
 
   <main>
-    <section class="hero-section position-relative text-white overflow-hidden">
-      <div class="hero-overlay"></div>
-      <div class="container py-5 position-relative">
-        <div class="row align-items-center gy-4">
-          <div class="col-lg-7 text-center text-lg-start">
-            <p class="eyebrow text-uppercase text-warning mb-3">Reliable Traveller Booking in Kanpur</p>
-            <h2 class="display-5 fw-bold">Comfortable Tempo Traveller Booking in Kanpur for Family, Group & Tour Trips</h2>
-            <p class="lead mt-4">Trusted Tempo Traveller services for family tours, group trips, wedding travel, outstation journeys and one-way drops.</p>
-            <div class="d-flex flex-column flex-sm-row gap-3 mt-4">
-              <a href="https://wa.me/919956531108" class="btn btn-outline-light btn-lg">WhatsApp Now</a>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-scrim"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow eyebrow-route">Tempo Traveller on Rent · Kanpur</span>
+          <h1>Comfortable Tempo Traveller Booking in Kanpur for Family, Group &amp; Tour Trips</h1>
+          <p class="hero-lead">Trusted Tempo Traveller service for family tours, group trips, wedding travel, pilgrimage journeys, outstation trips and one-way drops.</p>
+          <div class="hero-chips">
+            <span><i class="bi bi-people-fill"></i> 12–17 Seater</span>
+            <span><i class="bi bi-snow"></i> AC Coach</span>
+            <span><i class="bi bi-patch-check-fill"></i> All-India Permit</span>
+            <span><i class="bi bi-person-badge-fill"></i> Experienced Drivers</span>
+          </div>
+          <div class="hero-cta">
+            <a href="https://wa.me/919956531108" class="btn btn-brand btn-lg"><i class="bi bi-whatsapp"></i> Book on WhatsApp</a>
+            <a href="tel:+919956531108" class="btn btn-ghost btn-lg"><i class="bi bi-telephone-fill"></i> Call 99565 31108</a>
+          </div>
+        </div>
+
+        <div class="hero-form">
+          <div class="enquiry-card">
+            <span class="card-eyebrow">Get a quick quote</span>
+            <h3>Quick Enquiry Form</h3>
+            <form id="enquiryForm">
+              <!-- Honeypot field for spam protection: real users leave this empty -->
+              <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true" />
+              <div class="mb-3">
+                <label for="name" class="form-label">Customer Name</label>
+                <input type="text" class="form-control" id="name" name="name" required />
+              </div>
+              <div class="mb-3">
+                <label for="phone" class="form-label">Mobile Number</label>
+                <input type="tel" class="form-control" id="phone" name="phone" placeholder="10 digit number" required />
+              </div>
+              <div class="row g-3">
+                <div class="col-6">
+                  <label for="startDate" class="form-label">Travel Start Date</label>
+                  <input type="date" class="form-control" id="startDate" name="startDate" required />
+                </div>
+                <div class="col-6">
+                  <label for="endDate" class="form-label">Travel End Date</label>
+                  <input type="date" class="form-control" id="endDate" name="endDate" required />
+                </div>
+              </div>
+              <div class="mb-3 mt-3">
+                <label for="destination" class="form-label">Destination</label>
+                <input type="text" class="form-control" id="destination" name="destination" placeholder="e.g. Ayodhya, Varanasi" required />
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Other Message</label>
+                <textarea class="form-control" id="message" name="message" rows="3"></textarea>
+              </div>
+              <button type="submit" class="btn btn-brand" id="submitButton">Send Enquiry</button>
+              <div id="formAlert" class="mt-3"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ASSURANCE STRIP -->
+    <section class="assurance">
+      <div class="container assurance-grid">
+        <div class="assurance-item">
+          <i class="bi bi-shield-check"></i>
+          <div><strong>Safe &amp; Punctual</strong><span>Experienced, verified drivers</span></div>
+        </div>
+        <div class="assurance-item">
+          <i class="bi bi-snow2"></i>
+          <div><strong>Clean AC Coaches</strong><span>Well-maintained vehicles</span></div>
+        </div>
+        <div class="assurance-item">
+          <i class="bi bi-cash-coin"></i>
+          <div><strong>Transparent Rates</strong><span>No hidden charges</span></div>
+        </div>
+        <div class="assurance-item">
+          <i class="bi bi-headset"></i>
+          <div><strong>24×7 Booking</strong><span>Fast WhatsApp support</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section-pad">
+      <div class="container">
+        <div class="row align-items-stretch gx-5 gy-4">
+          <div class="col-lg-7">
+            <div class="about-text">
+              <span class="eyebrow eyebrow-route">About Us</span>
+              <h2>Reliable Tempo Traveller booking across Kanpur &amp; beyond</h2>
+              <p>Prime4Travels provides comfortable and dependable Tempo Traveller booking services in Kanpur and nearby cities. We specialise in family tours, group trips, pilgrimage travel, weddings, outstation journeys and one-way drops.</p>
+              <p>Our coaches are clean, spacious and built for long-distance comfort. We focus on safe driving, punctual pick-ups and honest pricing — so your group travels together, relaxed and on time.</p>
+              <p>Whether it's a family vacation, a friends' trip, a corporate outing or a religious tour, we offer trusted travel solutions with experienced drivers and well-kept vehicles.</p>
             </div>
           </div>
-
           <div class="col-lg-5">
-            <div class="card enquiry-card shadow-lg p-4">
-              <div class="card-body">
-                <h3 class="card-title mb-3">Quick Enquiry Form</h3>
-                <form id="enquiryForm">
-                  <!-- Honeypot field for spam protection: real users leave this empty -->
-                  <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true" />
-                  <div class="mb-3">
-                    <label for="name" class="form-label">Customer Name</label>
-                    <input type="text" class="form-control" id="name" name="name" required />
-                  </div>
-                  <div class="mb-3">
-                    <label for="phone" class="form-label">Mobile Number</label>
-                    <input type="tel" class="form-control" id="phone" name="phone" placeholder="10 digit number" required />
-                  </div>
-                  <div class="row g-3">
-                    <div class="col-6">
-                      <label for="startDate" class="form-label">Travel Start Date</label>
-                      <input type="date" class="form-control" id="startDate" name="startDate" required />
-                    </div>
-                    <div class="col-6">
-                      <label for="endDate" class="form-label">Travel End Date</label>
-                      <input type="date" class="form-control" id="endDate" name="endDate" required />
-                    </div>
-                  </div>
-                  <div class="mb-3 mt-3">
-                    <label for="destination" class="form-label">Destination</label>
-                    <input type="text" class="form-control" id="destination" name="destination" placeholder="e.g. Ayodhya, Varanasi" required />
-                  </div>
-                  <div class="mb-3">
-                    <label for="message" class="form-label">Other Message</label>
-                    <textarea class="form-control" id="message" name="message" rows="3"></textarea>
-                  </div>
-                  <button type="submit" class="btn btn-primary w-100" id="submitButton">Send Enquiry</button>
-                  <div id="formAlert" class="mt-3"></div>
-                </form>
-              </div>
+            <div class="why-card h-100">
+              <h3>Why travellers choose us</h3>
+              <ul class="why-list">
+                <li><i class="bi bi-check-circle-fill"></i><span><strong>All-India tourist permit</strong> — travel to any state without hassle.</span></li>
+                <li><i class="bi bi-check-circle-fill"></i><span><strong>Doorstep pick-up &amp; drop</strong> anywhere in Kanpur.</span></li>
+                <li><i class="bi bi-check-circle-fill"></i><span><strong>Clean, sanitised coaches</strong> with comfortable seating.</span></li>
+                <li><i class="bi bi-check-circle-fill"></i><span><strong>Courteous, experienced drivers</strong> who know the routes.</span></li>
+                <li><i class="bi bi-check-circle-fill"></i><span><strong>Transparent pricing</strong> confirmed before your trip.</span></li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="about" class="container py-5">
-      <div class="row align-items-center gx-5">
-        <div class="col-lg-6 mb-4 mb-lg-0">
-          <div class="content-card p-4 rounded-4 shadow-sm bg-white h-100">
-            <h2>About Prime4Travels</h2>
-            <p>Prime4Travels provides comfortable and reliable Tempo Traveller booking services in Kanpur and nearby areas. We specialize in family tours, group trips, pilgrimage tours, wedding travel, outstation journeys, and one-way drops.</p>
-            <p>Our vehicles are clean, spacious, and suitable for long-distance travel. We focus on safe driving, customer comfort, and affordable pricing.</p>
-            <p>Whether you are planning a family vacation, friends trip, corporate outing, or religious tour, Prime4Travels offers trusted travel solutions with experienced drivers and well-maintained vehicles.</p>
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <div class="row g-3">
-            <div class="col-6">
-              <div class="info-card p-4 rounded-4 shadow-sm bg-light">
-                <h3>Safe Driving</h3>
-                <p>Experienced drivers, punctual pick-up and safe routes.</p>
-              </div>
-            </div>
-            <div class="col-6">
-              <div class="info-card p-4 rounded-4 shadow-sm bg-light">
-                <h3>Affordable Prices</h3>
-                <p>Competitive fares for families, groups and outstation travel.</p>
-              </div>
-            </div>
-            <div class="col-6">
-              <div class="info-card p-4 rounded-4 shadow-sm bg-light">
-                <h3>Clean Vehicles</h3>
-                <p>Well-maintained Tempo Travellers with AC and comfort seating.</p>
-              </div>
-            </div>
-            <div class="col-6">
-              <div class="info-card p-4 rounded-4 shadow-sm bg-light">
-                <h3>Local Expertise</h3>
-                <p>Specializing in Kanpur, Unnao, Lucknow, Jhansi and nearby cities.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="services" class="py-5 bg-light">
+    <!-- SERVICES -->
+    <section id="services" class="section-pad bg-cream">
       <div class="container">
         <div class="section-heading text-center mb-5">
-          <p class="text-uppercase text-muted mb-2">Our Services</p>
+          <span class="eyebrow eyebrow-route">Our Services</span>
           <h2>Tempo Traveller Services</h2>
         </div>
-        <div class="row g-4">
-          <div class="col-md-6 col-lg-3">
-            <div class="service-card p-4 rounded-4 shadow-sm h-100">
-              <h3>Family Tours</h3>
-              <p>Comfortable family travel for vacations and celebrations.</p>
-            </div>
+        <div class="card-grid services-grid">
+          <div class="service-card">
+            <span class="service-icon"><i class="bi bi-people-fill"></i></span>
+            <h3>Family Tours</h3>
+            <p>Comfortable family travel for vacations, holidays and celebrations.</p>
           </div>
-          <div class="col-md-6 col-lg-3">
-            <div class="service-card p-4 rounded-4 shadow-sm h-100">
-              <h3>Group Tours</h3>
-              <p>Best for group travel, friends trips, and corporate outings.</p>
-            </div>
+          <div class="service-card">
+            <span class="service-icon"><i class="bi bi-flag-fill"></i></span>
+            <h3>Group Tours</h3>
+            <p>Ideal for group travel, friends' trips and corporate outings.</p>
           </div>
-          <div class="col-md-6 col-lg-3">
-            <div class="service-card p-4 rounded-4 shadow-sm h-100">
-              <h3>Wedding Travel</h3>
-              <p>Reliable wedding transport for guests and family groups.</p>
-            </div>
+          <div class="service-card">
+            <span class="service-icon"><i class="bi bi-heart-fill"></i></span>
+            <h3>Wedding Travel</h3>
+            <p>Reliable wedding transport for guests and family groups.</p>
           </div>
-          <div class="col-md-6 col-lg-3">
-            <div class="service-card p-4 rounded-4 shadow-sm h-100">
-              <h3>Outstation Trips</h3>
-              <p>Long-distance travel with comfort and luggage space.</p>
-            </div>
+          <div class="service-card">
+            <span class="service-icon"><i class="bi bi-signpost-split-fill"></i></span>
+            <h3>Outstation Trips</h3>
+            <p>Long-distance journeys with comfort and ample luggage space.</p>
           </div>
-          <div class="col-md-6 col-lg-3">
-            <div class="service-card p-4 rounded-4 shadow-sm h-100">
-              <h3>Religious Tours</h3>
-              <p>Safe and punctual travel for pilgrimage journeys.</p>
-            </div>
+          <div class="service-card">
+            <span class="service-icon"><i class="bi bi-brightness-high-fill"></i></span>
+            <h3>Religious Tours</h3>
+            <p>Safe and punctual travel for pilgrimages and temple visits.</p>
           </div>
-          <div class="col-md-6 col-lg-3">
-            <div class="service-card p-4 rounded-4 shadow-sm h-100">
-              <h3>Airport/Railway Drop</h3>
-              <p>One-way transfers and drop services for airports and stations.</p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3">
-            <div class="service-card p-4 rounded-4 shadow-sm h-100">
-              <h3>Corporate Travel</h3>
-              <p>Group travel for meetings, conferences and employee transport.</p>
-            </div>
+          <div class="service-card">
+            <span class="service-icon"><i class="bi bi-train-front-fill"></i></span>
+            <h3>Airport / Railway Drop</h3>
+            <p>One-way transfers and drops for airports and railway stations.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="gallery" class="container py-5">
-      <div class="section-heading text-center mb-5">
-        <p class="text-uppercase text-muted mb-2">Traveller Gallery</p>
-        <h2>Vehicle Photos & Interior Features</h2>
-      </div>
-      <div class="row g-4">
-        <div class="col-sm-6 col-lg-4">
-          <div class="gallery-card rounded-4 overflow-hidden shadow-sm">
-            <div class="gallery-image gallery-image-1"></div>
-            <div class="gallery-caption p-3">
-              <h5>Interior Comfort</h5>
-              <p>Spacious seating and clean cabin for every trip.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-lg-4">
-          <div class="gallery-card rounded-4 overflow-hidden shadow-sm">
-            <div class="gallery-image gallery-image-2"></div>
-            <div class="gallery-caption p-3">
-              <h5>AC & Lighting</h5>
-              <p>AC enabled vehicles with bright interior lighting.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-lg-4">
-          <div class="gallery-card rounded-4 overflow-hidden shadow-sm">
-            <div class="gallery-image gallery-image-3"></div>
-            <div class="gallery-caption p-3">
-              <h5>Luggage Space</h5>
-              <p>Large luggage area for bags and family gear.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="routes" class="py-5 bg-light">
+    <!-- FLEET / GALLERY -->
+    <section id="fleet" class="section-pad">
       <div class="container">
         <div class="section-heading text-center mb-5">
-          <p class="text-uppercase text-muted mb-2">Popular Routes</p>
+          <span class="eyebrow eyebrow-route">Our Fleet</span>
+          <h2>Vehicle Photos &amp; Interior</h2>
+        </div>
+        <div class="card-grid gallery-grid">
+          <div class="gallery-card">
+            <div class="gallery-image gallery-image-1" role="img" aria-label="Force Tempo Traveller front view"></div>
+            <div class="gallery-caption">
+              <h5>Force Tempo Traveller</h5>
+              <p>Well-maintained coach, ready for every journey.</p>
+            </div>
+          </div>
+          <div class="gallery-card">
+            <div class="gallery-image gallery-image-2" role="img" aria-label="Tempo Traveller side view"></div>
+            <div class="gallery-caption">
+              <h5>Spacious &amp; Clean</h5>
+              <p>Roomy body with plenty of luggage space.</p>
+            </div>
+          </div>
+          <div class="gallery-card">
+            <div class="gallery-image gallery-image-3" role="img" aria-label="Tempo Traveller AC interior seating"></div>
+            <div class="gallery-caption">
+              <h5>AC &amp; Comfortable Seating</h5>
+              <p>Cushioned pushback seats with ambient lighting.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ROUTES -->
+    <section id="routes" class="section-pad bg-cream">
+      <div class="container">
+        <div class="section-heading text-center mb-5">
+          <span class="eyebrow eyebrow-route">Popular Routes</span>
           <h2>Trusted Routes from Kanpur</h2>
         </div>
-        <div class="row g-4 justify-content-center">
-          <div class="col-sm-6 col-md-4"><div class="route-card p-4 rounded-4 shadow-sm">Kanpur → Ayodhya</div></div>
-          <div class="col-sm-6 col-md-4"><div class="route-card p-4 rounded-4 shadow-sm">Kanpur → Varanasi</div></div>
-          <div class="col-sm-6 col-md-4"><div class="route-card p-4 rounded-4 shadow-sm">Kanpur → Prayagraj</div></div>
-          <div class="col-sm-6 col-md-4"><div class="route-card p-4 rounded-4 shadow-sm">Kanpur → Nainital</div></div>
-          <div class="col-sm-6 col-md-4"><div class="route-card p-4 rounded-4 shadow-sm">Kanpur → Dehradun</div></div>
-          <div class="col-sm-6 col-md-4"><div class="route-card p-4 rounded-4 shadow-sm">Kanpur → Vaishno Devi</div></div>
+        <div class="card-grid routes-grid">
+          <div class="route-card"><span class="route-from">Kanpur</span><span class="route-line"></span><span class="route-to">Ayodhya</span></div>
+          <div class="route-card"><span class="route-from">Kanpur</span><span class="route-line"></span><span class="route-to">Varanasi</span></div>
+          <div class="route-card"><span class="route-from">Kanpur</span><span class="route-line"></span><span class="route-to">Prayagraj</span></div>
+          <div class="route-card"><span class="route-from">Kanpur</span><span class="route-line"></span><span class="route-to">Nainital</span></div>
+          <div class="route-card"><span class="route-from">Kanpur</span><span class="route-line"></span><span class="route-to">Dehradun</span></div>
+          <div class="route-card"><span class="route-from">Kanpur</span><span class="route-line"></span><span class="route-to">Vaishno Devi</span></div>
         </div>
       </div>
     </section>
 
-    <section id="reviews" class="container py-5">
-      <div class="section-heading text-center mb-5">
-        <p class="text-uppercase text-muted mb-2">Customer Reviews</p>
-        <h2>What Customers Say</h2>
-      </div>
-      <div class="row g-4">
-        <div class="col-md-6">
-          <div class="review-card p-4 rounded-4 shadow-sm">
-            <p class="mb-3">“Excellent service and comfortable Tempo Traveller for our pilgrimage trip. Driver was punctual and the vehicle was clean.”</p>
-            <p class="mb-0 fw-semibold">– Ritu, Kanpur</p>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="review-card p-4 rounded-4 shadow-sm">
-            <p class="mb-3">“Great experience for our family tour to Varanasi. Affordable pricing and smooth journey.”</p>
-            <p class="mb-0 fw-semibold">– Ashish, Unnao</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="py-5 bg-primary text-white">
+    <!-- REVIEWS -->
+    <section id="reviews" class="section-pad">
       <div class="container">
-        <div class="row gy-4">
+        <div class="section-heading text-center mb-5">
+          <span class="eyebrow eyebrow-route">Customer Reviews</span>
+          <h2>What Travellers Say</h2>
+        </div>
+        <div class="card-grid reviews-grid">
+          <div class="review-card">
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="quote">“Excellent service and a very comfortable Tempo Traveller for our pilgrimage trip. The driver was punctual and the vehicle was spotless.”</p>
+            <div class="reviewer">
+              <span class="reviewer-avatar">R</span>
+              <span class="reviewer-name"><strong>Ritu</strong><span>Kanpur</span></span>
+            </div>
+          </div>
+          <div class="review-card">
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="quote">“Great experience for our family tour to Varanasi. Affordable pricing and a smooth, relaxed journey throughout.”</p>
+            <div class="reviewer">
+              <span class="reviewer-avatar">A</span>
+              <span class="reviewer-name"><strong>Ashish</strong><span>Unnao</span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact section-pad">
+      <div class="container">
+        <div class="row gy-4 align-items-center">
           <div class="col-lg-5">
-            <h2>Contact Prime4Travels</h2>
-            <p>Book your Tempo Traveller in Kanpur today. Fast response and WhatsApp support available.</p>
-            <ul class="list-unstyled contact-list">
-              <li><strong>Phone:</strong> <a href="tel:+919956531108" class="text-white">99565 31108</a></li>
-              <li><strong>WhatsApp:</strong> <a href="https://wa.me/919956531108" class="text-white">Chat on WhatsApp</a></li>
-              <li><strong>Email:</strong> <a href="mailto:prime4travels@gmail.com" class="text-white">prime4travels@gmail.com</a></li>
-              <li><strong>Service Area:</strong> Kanpur, Unnao, Lucknow, Pukhrayan, Orai, Jhansi, Etawah, Fatehpur</li>
-            </ul>
+            <span class="eyebrow eyebrow-route">Get in touch</span>
+            <h2>Book your Tempo Traveller today</h2>
+            <p class="contact-lead">Fast response on call and WhatsApp. Tell us your dates and destination and we'll share the best quote.</p>
+            <div class="contact-cards">
+              <a href="tel:+919956531108" class="contact-card">
+                <i class="bi bi-telephone-fill"></i>
+                <div><span>Phone</span><strong>99565 31108</strong></div>
+              </a>
+              <a href="https://wa.me/919956531108" class="contact-card">
+                <i class="bi bi-whatsapp"></i>
+                <div><span>WhatsApp</span><strong>Chat with us</strong></div>
+              </a>
+              <a href="mailto:prime4travels@gmail.com" class="contact-card">
+                <i class="bi bi-envelope-fill"></i>
+                <div><span>Email</span><strong>prime4travels@gmail.com</strong></div>
+              </a>
+              <div class="contact-card">
+                <i class="bi bi-geo-alt-fill"></i>
+                <div><span>Service Area</span><strong>Kanpur, Unnao, Lucknow, Pukhrayan, Orai, Jhansi, Etawah, Fatehpur</strong></div>
+              </div>
+            </div>
           </div>
           <div class="col-lg-7">
-            <div class="map-frame rounded-4 overflow-hidden shadow-lg">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3539.383625156666!2d80.30423701508811!3d26.449923583119565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399c40f17ae8c31f%3A0x2092d0f0108f5d5f!2sKanpur%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1711234567890!5m2!1sen!2sin" width="100%" height="320" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="map-frame">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3539.383625156666!2d80.30423701508811!3d26.449923583119565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399c40f17ae8c31f%3A0x2092d0f0108f5d5f!2sKanpur%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1711234567890!5m2!1sen!2sin" width="100%" height="340" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Prime4Travels service area map"></iframe>
             </div>
           </div>
         </div>
@@ -276,12 +308,38 @@
     </section>
   </main>
 
-  <footer class="py-4 text-center bg-dark text-white">
-    <div class="container small">
-      <p class="mb-1">Prime4Travels - Tempo Traveller Booking in Kanpur</p>
-      <p class="mb-0">Designed for fast loading, mobile-friendly enquiry, and local SEO.</p>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <strong>Prime4Travels</strong>
+          <p class="mt-2 mb-0">Comfortable, reliable Tempo Traveller booking in Kanpur for family, group, wedding, outstation and pilgrimage travel.</p>
+        </div>
+        <div>
+          <strong>Quick Links</strong>
+          <ul>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#fleet">Fleet</a></li>
+            <li><a href="#routes">Routes</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <strong>Contact</strong>
+          <ul>
+            <li><a href="tel:+919956531108">99565 31108</a></li>
+            <li><a href="https://wa.me/919956531108">WhatsApp</a></li>
+            <li><a href="mailto:prime4travels@gmail.com">prime4travels@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        © <span id="year">2026</span> Prime4Travels · Tempo Traveller Booking in Kanpur. All rights reserved.
+      </div>
     </div>
   </footer>
+
+  <a href="https://wa.me/919956531108" class="wa-float" aria-label="Chat on WhatsApp"><i class="bi bi-whatsapp"></i></a>
 
   <script src="script.js"></script>
 </body>
