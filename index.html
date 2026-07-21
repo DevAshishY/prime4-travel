@@ -47,6 +47,8 @@
               <div class="card-body">
                 <h3 class="card-title mb-3">Quick Enquiry Form</h3>
                 <form id="enquiryForm">
+                  <!-- Honeypot field for spam protection: real users leave this empty -->
+                  <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true" />
                   <div class="mb-3">
                     <label for="name" class="form-label">Customer Name</label>
                     <input type="text" class="form-control" id="name" name="name" required />
